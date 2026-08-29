@@ -1,0 +1,17 @@
+[
+  { "anio": "1°", "materia": "Ciencias Naturales", "tema": "Explorando el Universo y la Tierra", "url": "https://docs.google.com/document/d/1MM7XweK_vP7rZO4kpCiDKV4VRk1tfYKw/edit?usp=sharing" },
+  { "anio": "1°", "materia": "Ciencias Naturales", "tema": "Unidad 2", "url": "https://drive.google.com/file/d/1JplXANfBdcbA2xoWbnKrdtPKSV1JLqDc/view?usp=sharing" },
+  { "anio": "1°", "materia": "Ciencias Naturales", "tema": "Unidad 3 (próximamente)", "url": "" },
+
+  { "anio": "2°", "materia": "Fisicoquímica", "tema": "La ciencia y el conocimiento científico", "url": "https://docs.google.com/document/d/1-hsD81GASP4O_zDawlN7wjpPv7-P3UU5/edit?usp=drive_link" },
+  { "anio": "2°", "materia": "Fisicoquímica", "tema": "Materia, estados y TCM", "url": "https://docs.google.com/document/d/1rP7n16ePpayfsX2X_rxrpQ2Vv3d1m1sM/edit?usp=drive_link" },
+  { "anio": "2°", "materia": "Fisicoquímica", "tema": "Las soluciones", "url": "https://docs.google.com/document/d/1G3brZ8KNyUmAO6eMn-rCOgFHL4V3HIJ2/edit?usp=drive_link" },
+
+  { "anio": "3°", "materia": "Fisicoquímica", "tema": "La ciencia y el conocimiento científico", "url": "https://docs.google.com/document/d/18LQ4Qy-pHKWG2Kv759vIFK8nSLxSjgqu/edit?usp=sharing" },
+  { "anio": "3°", "materia": "Fisicoquímica", "tema": "Tamaño y primeros modelos atómicos", "url": "https://docs.google.com/document/d/189fmg79t1AC21cRXmiE-I0cAiiR1RbxD/edit?usp=sharing" },
+  { "anio": "3°", "materia": "Fisicoquímica", "tema": "Modelo atómico actual", "url": "https://docs.google.com/document/d/1fVT_kpDztHCsWFT-ELX5qFXRnXtVWMq_/edit?usp=sharing" },
+  { "anio": "3°", "materia": "Fisicoquímica", "tema": "La tabla periódica", "url": "https://docs.google.com/document/d/1i2WrqD25wsSgrl6hamB3oPJeAKYZKBiU/edit?usp=sharing" },
+
+  { "anio": "—", "materia": "Física", "tema": "Cargá acá tus materiales de Física", "url": "" },
+  { "anio": "—", "materia": "Química", "tema": "Cargá acá tus materiales de Química", "url": "" }
+]
