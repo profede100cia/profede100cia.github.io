@@ -120,11 +120,30 @@ function renderFilterableTable({ mountId, filtersId, data, filterKeys, columns }
   draw();
 }
 
+/* =========================================================
+   HISTORIETAS: filmstrip de imágenes leído desde data/historietas.json
+========================================================= */
+function renderHistorietas(items){
+  const film = document.getElementById("historietasFilm");
+  const withImage = items.filter(i => i.imagen);
+
+  if (withImage.length === 0){
+    film.innerHTML = `<div class="empty-state">Todavía no hay imágenes cargadas. Subí un jpg o gif a assets/ y agregalo en data/historietas.json.</div>`;
+    return;
+  }
+
+  film.innerHTML = withImage.map(i => `
+    <div class="frame frame--img">
+      <img src="${i.imagen}" alt="${i.alt ?? ""}" loading="lazy">
+    </div>`).join("");
+}
+
 /* ---------- carga de datos (el "JSON como base de datos") ---------- */
 Promise.all([
   fetch("data/materias.json").then(r => r.json()),
   fetch("data/recursos.json").then(r => r.json()),
-]).then(([materias, recursos]) => {
+  fetch("data/historietas.json").then(r => r.json()),
+]).then(([materias, recursos, historietas]) => {
   renderFilterableTable({
     mountId: "materiasTable",
     filtersId: "materiasFilters",
@@ -140,6 +159,8 @@ Promise.all([
     filterKeys: [{ key: "categoria", label: "Categoría" }],
     columns: [{ key: "categoria", label: "Categoría" }, { key: "nombre", label: "Nombre" }, { key: "descripcion", label: "Descripción" }],
   });
+
+  renderHistorietas(historietas);
 }).catch(err => {
   console.error("No se pudieron cargar los datos:", err);
   document.getElementById("materiasTable").innerHTML =
