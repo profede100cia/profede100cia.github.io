@@ -48,19 +48,10 @@ header{
 .brand{display:flex; align-items:center; gap:10px; text-decoration:none;}
 .brand-name{font-family:var(--mono); font-weight:700; font-size:14px;}
 
-.logo-tile{
-  width:38px; height:38px; border:2px solid var(--ink); border-radius:8px;
-  background:var(--tile); position:relative; font-family:var(--mono);
-  display:flex; align-items:center; justify-content:center; flex-shrink:0;
-}
-.logo-tile .p{font-size:19px; font-weight:800;}
-.logo-tile .num{position:absolute; top:2px; right:4px; font-size:7px;}
-.logo-tile .cia{position:absolute; bottom:2px; font-size:6.5px; letter-spacing:.02em;}
+.logo-tile{width:38px; height:38px; flex-shrink:0; display:block;}
+.logo-tile svg{width:100%; height:100%; display:block;}
 
-.logo-tile--lg{width:200px; height:200px; border-width:3px; border-radius:var(--radius); box-shadow:8px 8px 0 var(--shadow); transform:rotate(-2deg);}
-.logo-tile--lg .p{font-size:70px;}
-.logo-tile--lg .num{font-size:16px; top:14px; right:18px;}
-.logo-tile--lg .cia{font-size:15px; bottom:14px; letter-spacing:.04em;}
+.logo-tile--lg{width:200px; height:200px; transform:rotate(-2deg); filter:drop-shadow(8px 8px 0 var(--shadow));}
 
 nav#tabs ul{list-style:none; display:flex; gap:20px; margin:0; padding:0;}
 nav#tabs a{
