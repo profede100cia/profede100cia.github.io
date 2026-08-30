@@ -93,7 +93,7 @@ function renderFilterableTable({ mountId, filtersId, data, filterKeys, columns }
     });
 
     const rows = data.filter(row =>
-      Object.entries(active).every(([k, v]) => row[k] === v)
+      Object.entries(active).every(([k, v]) => String(row[k]) === v)
     );
 
     if (rows.length === 0){
