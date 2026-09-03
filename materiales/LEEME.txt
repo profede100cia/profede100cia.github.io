@@ -1,0 +1,13 @@
+Subí acá tus archivos (PDF, Word, lo que sea) con el nombre exacto:
+
+Año - Materia - Tema.ext
+
+Ejemplo:
+2026 - Fisicoquímica 2º - Las soluciones.pdf
+
+El robot de GitHub Actions lee el NOMBRE del archivo (no el contenido) y arma
+solo la fila correspondiente en data/materias-archivos.json. No hace falta
+tocar ningún archivo a mano.
+
+Importante: no uses " - " (espacio guion espacio) dentro del año, la materia
+o el tema, porque es el separador que usa el robot para leer el nombre.

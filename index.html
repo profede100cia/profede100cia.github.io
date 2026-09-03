@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProfeDe100cia — Gabriel Frank</title>
+<meta name="description" content="Materiales de Ciencias Naturales, Fisicoquímica, Física y Química del ProfeDe100cia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Work+Sans:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="#inicio">
+      <span class="logo-tile" aria-hidden="true">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="4" width="92" height="92" rx="14" fill="#ffffff" stroke="#16261f" stroke-width="6"/>
+          <text x="15" y="60" font-family="'JetBrains Mono', monospace" font-size="48" font-weight="800" fill="#16261f">P</text>
+          <text x="88" y="24" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="700" fill="#16261f" text-anchor="end">100</text>
+          <text x="50" y="84" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="600" fill="#16261f" text-anchor="middle" letter-spacing="1">cia</text>
+        </svg>
+      </span>
+      <span class="brand-name">ProfeDe100cia</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList">Menú</button>
+    <nav id="tabs">
+      <ul id="navList"><!-- generado por script.js a partir de TABS --></ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===================== INICIO ===================== -->
+  <section id="page-inicio" class="page" hidden>
+    <div class="wrap hero">
+      <span class="logo-tile logo-tile--lg" aria-hidden="true">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="4" width="92" height="92" rx="14" fill="#ffffff" stroke="#16261f" stroke-width="6"/>
+          <text x="15" y="60" font-family="'JetBrains Mono', monospace" font-size="48" font-weight="800" fill="#16261f">P</text>
+          <text x="88" y="24" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="700" fill="#16261f" text-anchor="end">100</text>
+          <text x="50" y="84" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="600" fill="#16261f" text-anchor="middle" letter-spacing="1">cia</text>
+        </svg>
+      </span>
+      <div>
+        <p class="eyebrow">Página oficial del profe</p>
+        <h1>El ProfeDe100cia 👨‍🔬🧪</h1>
+        <p>Soy Gabriel Frank, profesor de Ciencias Naturales, Fisicoquímica, Física y Química. Acá vas a encontrar los materiales de cada unidad, organizados como una tabla periódica navegable.</p>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="#materias">Ver materiales</a>
+          <a class="btn btn-ghost" href="#historietas">Historietas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MATERIAS ===================== -->
+  <section id="page-materias" class="page" hidden>
+    <div class="wrap">
+      <div class="section-head"><span class="period">Repositorio</span><h2>Materias</h2></div>
+      <p class="section-sub">Filtrá por año o materia. Los datos salen de <code>data/materias.json</code> — para sumar un tema nuevo, agregás una fila ahí.</p>
+      <div class="filters" id="materiasFilters"></div>
+      <div id="materiasTable"></div>
+    </div>
+  </section>
+
+  <!-- ===================== RECURSOS ===================== -->
+  <section id="page-recursos" class="page" hidden>
+    <div class="wrap">
+      <div class="section-head"><span class="period">Repositorio</span><h2>Recursos</h2></div>
+      <p class="section-sub">Material variado no atado a una unidad puntual: simulaciones, videos, links. Se edita en <code>data/recursos.json</code>.</p>
+      <div class="filters" id="recursosFilters"></div>
+      <div id="recursosTable"></div>
+    </div>
+  </section>
+
+  <!-- ===================== HISTORIETAS ===================== -->
+  <section id="page-historietas" class="page" hidden>
+    <div class="wrap">
+      <div class="section-head"><span class="period">Divulgación</span><h2>Historietas</h2></div>
+      <p class="section-sub">Ciencia contada en viñetas. Se editan en <code>data/historietas.json</code>; las imágenes van en <code>assets/</code> (jpg, png o gif animado).</p>
+      <div class="filmstrip" id="historietasFilm"></div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE MÍ ===================== -->
+  <section id="page-sobre-mi" class="page" hidden>
+    <div class="wrap about">
+      <div>
+        <h2>Sobre mí</h2>
+        <p>Doy Ciencias Naturales, Fisicoquímica, Física y Química en varios cursos. Además de las clases, armo simulaciones, juegos y materiales interactivos para que la ciencia se entienda jugando — como esta misma página.</p>
+      </div>
+      <div class="sticky">
+        <b>Nota rápida</b>
+        🎂 15 de diciembre — ¡no te olvides de saludarme!<br>
+        🎮 videojuegos · 🎸 guitarra · 🧪 ciencia y tecnología
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; width:100%;">
+    <span>© <span id="year"></span> ProfeDe100cia — Gabriel Frank</span>
+    <span>Hecho con tabla periódica y mates 🧉</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

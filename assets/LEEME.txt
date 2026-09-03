@@ -1,0 +1,6 @@
+Subí acá las imágenes del sitio: jpg, png o gif animado.
+
+Se usan sobre todo para la sección Historietas — después de subir una imagen,
+agregala en data/historietas.json:
+
+{ "imagen": "assets/tu-archivo.jpg", "alt": "descripción corta" }
