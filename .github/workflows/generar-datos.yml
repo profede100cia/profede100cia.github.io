@@ -1,1 +1,28 @@
+name: Generar catálogo de materiales
 
+on:
+  push:
+    branches: [main]
+    paths:
+      - "materiales/**"
+
+permissions:
+  contents: write
+
+jobs:
+  generar-catalogo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repo
+        uses: actions/checkout@v4
+
+      - name: Generar data/materias-archivos.json
+        run: node scripts/generar-datos.js
+
+      - name: Commitear el catálogo actualizado (si cambió algo)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/materias-archivos.json
+          git diff --staged --quiet || git commit -m "Actualizar catálogo de materiales automáticamente"
+          git push
